@@ -1,0 +1,63 @@
+{
+    "mongodb":{
+        "host":"127.0.0.1",
+        "port":27017,
+        "db":"noservdb",
+        "username":"",
+        "password":""
+    },
+  "analyticsMongodb":{
+    "host":"127.0.0.1",
+    "port":27017,
+    "db":"noservdb",
+    "username":"",
+    "password":""
+  },
+    "server":{
+        "url":"https://api.noserv.io",
+        "port":443
+    },
+    "processType":"single",
+    "serverType":"standalone",
+    "logDir":"/logs",
+    "file" : {
+        "type" : "local",
+        "path" : "/public/files",
+        "baseUrl" : "http://localhost:3337"
+    },
+    "managerDirection":{"ip" : "127.0.0.1", "port" : 8080},
+
+    "mainPage" : "http://www.noserv.io/wordpress/",
+    "serviceList":{
+        "MANAGER": {
+            "serviceName": "MANAGER",
+            "moduleName": "lecle/managerservice",
+            "status": "off"
+        },
+        "MONGODB": {
+            "serviceName": "MONGODB",
+            "moduleName": "lecle/mongodbservice",
+            "status": "off"
+        },
+        "ANALYTICS": {
+            "serviceName": "ANALYTICS",
+            "moduleName": "lecle/analyticsservice",
+            "status": "off"
+        },
+        "APPS": {
+            "serviceName": "APPS",
+            "moduleName": "lecle/appsservice",
+            "status": "off"
+        },
+      "ANALYTICSDB": {
+        "serviceName": "ANALYTICSDB",
+        "moduleName": "lecle/analyticsdbservice",
+        "status": "off"
+      },
+      "CRON": {
+          "serviceName": "CRON",
+          "moduleName": "https://github.com/kangchals/cronservice.git",
+          "status": "off"
+      }
+    }
+}

@@ -19,12 +19,7 @@
     },
     "processType":"single",
     "serverType":"standalone",
-    "logDir":"/logs",
-    "file" : {
-        "type" : "local",
-        "path" : "/public/files",
-        "baseUrl" : "http://localhost:3337"
-    },
+
     "managerDirection":{"ip" : "127.0.0.1", "port" : 8080},
 
     "mainPage" : "http://www.noserv.io/wordpress/",
@@ -39,16 +34,6 @@
             "moduleName": "lecle/mongodbservice",
             "status": "off"
         },
-        "ANALYTICS": {
-            "serviceName": "ANALYTICS",
-            "moduleName": "lecle/analyticsservice",
-            "status": "off"
-        },
-        "APPS": {
-            "serviceName": "APPS",
-            "moduleName": "lecle/appsservice",
-            "status": "off"
-        },
       "ANALYTICSDB": {
         "serviceName": "ANALYTICSDB",
         "moduleName": "lecle/analyticsdbservice",
@@ -56,7 +41,7 @@
       },
       "CRON": {
           "serviceName": "CRON",
-          "moduleName": "https://github.com/kangchals/cronservice.git",
+          "moduleName": "git://github.com/kangchals/cronservice.git",
           "status": "off"
       }
     }

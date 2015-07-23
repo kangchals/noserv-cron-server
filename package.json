@@ -1,7 +1,7 @@
 {
-  "name": "noserv-server",
+  "name": "noserv-cron-server",
   "version": "0.0.1",
-  "description": "noserv.io server",
+  "description": "noserv.io Cron server",
   "main": "index.js",
   "scripts": {
     "test": "mocha --require test/support/env --recursive --timeout 20000",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lecle/noserv-server.git"
+    "url": "https://github.com/kangchals/noserv-cron-server.git"
   },
   "keywords": [
     "noserv"
   ],
-  "author": "Daesun",
+  "author": "Cheonsu Kang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lecle/noserv-server/issues"
+    "url": "https://github.com/kangchals/noserv-cron-server/issues"
   },
   "homepage": "https://github.com/lecle/noserv-server",
   "dependencies": {

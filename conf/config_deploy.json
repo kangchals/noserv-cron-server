@@ -19,7 +19,7 @@
     },
     "processType":"single",
     "serverType":"standalone",
-
+    "logDir":"/logs",
     "managerDirection":{"ip" : "127.0.0.1", "port" : 8080},
 
     "mainPage" : "http://www.noserv.io/wordpress/",

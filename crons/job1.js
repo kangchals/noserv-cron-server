@@ -1,6 +1,6 @@
 
 
-exports.cronFunction = function (container) {
+exports.cronFunction = function (){
     console.log('!!!! job1 !!!!! ' + new Date());
 };
 
